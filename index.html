@@ -14,12 +14,12 @@
 <meta name="theme-color" content="#0d1420">
 <link rel="manifest" href="manifest.webmanifest">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4388974491023298" crossorigin="anonymous"></script>
 </head>
 <body>
-<img class="side-god left" src="img/luck-god.png" alt="" aria-hidden="true">
-<img class="side-god right" src="img/luck-god.png" alt="" aria-hidden="true">
+<img class="side-god left" src="img/luck-god.png" alt="" aria-hidden="true" loading="lazy" decoding="async" fetchpriority="low">
+<img class="side-god right" src="img/luck-god.png" alt="" aria-hidden="true" loading="lazy" decoding="async" fetchpriority="low">
 <header class="topbar">
   <div class="brand">🇲🇲 <b>မြန်မာ 2D/3D</b> <span class="live-dot"></span><span class="live-txt">LIVE</span></div>
   <div class="clock" id="clock">--:--:--</div>
@@ -40,11 +40,13 @@
         <div class="card-title">🌅 မနက်ပိုင်း <small>12:01</small></div>
         <div class="bignum" id="num-morning">--</div>
         <div class="card-sub" id="sub-morning">စောင့်ဆိုင်းနေသည်…</div>
+        <button class="copybtn" id="copy-morning">📋 ကူးယူမယ်</button>
       </div>
       <div class="card" id="card-evening">
         <div class="card-title">🌇 ညနေပိုင်း <small>16:30</small></div>
         <div class="bignum" id="num-evening">--</div>
         <div class="card-sub" id="sub-evening">စောင့်ဆိုင်းနေသည်…</div>
+        <button class="copybtn" id="copy-evening">📋 ကူးယူမယ်</button>
       </div>
     </div>
   </section>
@@ -65,9 +67,29 @@
   </section>
 
   <section>
+    <h2>📅 2D ပြက္ခဒိန်</h2>
+    <div class="calnav">
+      <button id="cal-prev" aria-label="ပြီးခဲ့တဲ့လ">‹</button>
+      <span id="cal-title"></span>
+      <button id="cal-next" aria-label="နောက်လ">›</button>
+    </div>
+    <div class="calgrid" id="calgrid"></div>
+    <p class="note">ရက်စွဲတစ်ခုချင်းစီမှာ မနက် / ညနေ ထွက်ဂဏန်းတွေ ပြပါတယ်။</p>
+  </section>
+
+  <section>
     <h2>🔢 ဂဏန်းအကြိမ်ရေ <small>(နောက်ဆုံး ရလဒ်များမှ)</small></h2>
     <p class="note">အတိတ်က ထွက်ခဲ့တဲ့ ဂဏန်းအရေအတွက်ပါ။ နောက်ထွက်မယ့် ဂဏန်းကို ဘယ်သူမှ ကြိုမသိနိုင်ပါ — ဂဏန်းတိုင်းရဲ့ အခွင့်အရေးက အတူတူပဲ (1/100)။</p>
     <div class="freqgrid" id="freqgrid"></div>
+  </section>
+
+  <section>
+    <h2>🔍 ထိပ်စီး / နောက်ဆုံး ခွဲခြမ်းစိတ်ဖြာမှု</h2>
+    <h3 class="digitsub">ထိပ်စီး (ပထမဂဏန်း)</h3>
+    <div class="digitbar" id="digit-first"></div>
+    <h3 class="digitsub">နောက်ဆုံး (ဒုတိယဂဏန်း)</h3>
+    <div class="digitbar" id="digit-second"></div>
+    <p class="note">မှတ်တမ်းအပေါ် အခြေခံတဲ့ စာရင်းသက်သက်ပါ — ခန့်မှန်းချက် မဟုတ်ပါ။</p>
   </section>
 
   <div class="adslot">
@@ -87,11 +109,45 @@
     </div>
   </section>
 
+  <section>
+    <h2>📣 ရလဒ်ကို မျှဝေမယ်</h2>
+    <div class="sharebtns">
+      <a class="sharebtn fb" id="share-fb" target="_blank" rel="noopener" href="#">Facebook</a>
+      <a class="sharebtn tg" id="share-tg" target="_blank" rel="noopener" href="#">Telegram</a>
+      <a class="sharebtn vb" id="share-viber" href="#">Viber</a>
+      <button class="sharebtn cp" id="share-copy">🔗 လင့်ခ်ကူးယူမယ်</button>
+    </div>
+  </section>
+
   <section class="explain">
     <h2>❓ 2D ဆိုတာဘာလဲ?</h2>
     <p>မြန်မာ 2D ဟာ <b>ထိုင်း စတော့အိတ်ချိန်း (SET) Index</b> ကို အခြေခံပါတယ်။ မဲဖောက်ချိန်က <b>မနက်ပိုင်း 12:01</b> နဲ့ <b>ညနေပိုင်း 16:30</b> (မြန်မာစံတော်ချိန်၊ တနင်္လာ–သောကြာ) ဖြစ်ပြီး၊ အဲဒီအချိန်က SET Index တန်ဖိုးရဲ့ <b>ဒဿမရှေ့က နောက်ဆုံးဂဏန်း + ဒဿမနောက်က ပထမဂဏန်း</b> ကို ထွက်ဂဏန်းအဖြစ် ယူပါတယ်။</p>
     <p>ဥပမာ — SET = <b>1580.12</b> ဆိုရင် 2D = <b>01</b> ဖြစ်ပါတယ်။</p>
     <p class="note">ဒီ site က ရလဒ်တွေကို သတင်းအချက်အလက်အဖြစ်သာ ဖော်ပြတာပါ။ ထီထိုးဖို့ တိုက်တွန်းတာ မဟုတ်ပါ။</p>
+  </section>
+
+  <section class="explain">
+    <h2>❓ မေးလေ့ရှိသောမေးခွန်းများ</h2>
+    <details>
+      <summary>2D က ဘယ်အချိန်တွေ ထွက်လဲ?</summary>
+      <p>တနင်္လာနေ့ကနေ သောကြာနေ့အထိ တစ်နေ့ ၂ ကြိမ် — <b>မနက်ပိုင်း 12:01</b> နဲ့ <b>ညနေပိုင်း 16:30</b> (မြန်မာစံတော်ချိန်) ထွက်ပါတယ်။</p>
+    </details>
+    <details>
+      <summary>ထွက်ဂဏန်းကို ဘယ်လိုတွက်လဲ?</summary>
+      <p>ထိုင်း SET Index ရဲ့ <b>ဒဿမရှေ့က နောက်ဆုံးဂဏန်း + ဒဿမနောက်က ပထမဂဏန်း</b> ကို ယူပါတယ်။ ဥပမာ SET 1580.12 ဆို 2D = 01 ပါ။ ရလဒ်တိုင်းဘေးမှာ SET တန်ဖိုးပါ ပြထားလို့ ကိုယ်တိုင်စစ်လို့ရပါတယ်။</p>
+    </details>
+    <details>
+      <summary>စနေ၊ တနင်္ဂနွေ ဘာလို့ မထွက်လဲ?</summary>
+      <p>ထိုင်း စတော့စျေးကွက် ပိတ်လို့ SET Index အသစ်မရှိပါဘူး။ ထိုင်းရုံးပိတ်ရက်တွေမှာလည်း ထွက်ဂဏန်း မရှိပါ။</p>
+    </details>
+    <details>
+      <summary>3D က ဘာလဲ?</summary>
+      <p>ထိုင်း အစိုးရထီ (တစ်လ ၂ ကြိမ် — ၁ ရက်နေ့နဲ့ ၁၆ ရက်နေ့) ရဲ့ <b>ပထမဆု ဂဏန်း ၆ လုံးရဲ့ နောက်ဆုံး ၃ လုံး</b> ပါ။</p>
+    </details>
+    <details>
+      <summary>ဒီ site ကနေ ထီထိုးလို့ရလား?</summary>
+      <p><b>မရပါ။</b> ဒီ site က ရလဒ်သတင်းအချက်အလက်သက်သက် ဖော်ပြတာပါ။ ထီထိုးခြင်း၊ လောင်းကစားလုပ်ငန်းများ လုံးဝ မလုပ်ပါ။</p>
+    </details>
   </section>
 </main>
 
@@ -100,6 +156,6 @@
   <p class="updated" id="updated"></p>
 </footer>
 
-<script src="app.js?v=2"></script>
+<script src="app.js?v=3"></script>
 </body>
 </html>
