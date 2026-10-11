@@ -1,6 +1,14 @@
 *{box-sizing:border-box;margin:0;padding:0}
 :root{--bg:#0d1420;--card:#16202f;--gold:#f0b429;--green:#3fb950;--red:#f85149;--txt:#e8edf3;--mut:#8b949e;--line:#243044}
 body{background:var(--bg);color:var(--txt);font-family:"Noto Sans Myanmar","Myanmar3",system-ui,sans-serif;line-height:1.6;max-width:860px;margin:0 auto;padding:0 12px 40px}
+/* side god-of-fortune statues as background art (desktop only) */
+.side-god{position:fixed;top:50%;height:min(72vh,640px);width:auto;z-index:0;pointer-events:none;opacity:.5;
+ -webkit-mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 90%,transparent);
+ mask-image:linear-gradient(to bottom,transparent,#000 10%,#000 90%,transparent)}
+.side-god.left{left:max(0px,calc(50% - 720px));transform:translateY(-50%)}
+.side-god.right{right:max(0px,calc(50% - 720px));transform:translateY(-50%) scaleX(-1)}
+@media(max-width:1200px){.side-god{display:none}}
+header.topbar,main,footer{position:relative;z-index:1}
 .topbar{display:flex;justify-content:space-between;align-items:center;padding:14px 4px;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:10}
 .brand{font-size:1.15rem}
 .live-dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--red);margin:0 4px 0 8px;animation:blink 1.2s infinite}
