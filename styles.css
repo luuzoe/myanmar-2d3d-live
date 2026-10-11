@@ -65,11 +65,11 @@ footer .updated{margin-top:6px}
 .calnav button:disabled{opacity:.3;cursor:default}
 #cal-title{font-weight:700;color:var(--gold)}
 .calgrid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px}
-.calgrid .dow{color:var(--mut);font-size:.72rem;text-align:center;padding:4px 0}
-.calcell{background:var(--card);border:1px solid var(--line);border-radius:8px;min-height:52px;padding:4px;font-size:.72rem;text-align:center}
-.calcell .d{color:var(--mut);font-size:.75rem}
-.calcell .n{font-weight:700;color:#fff;font-variant-numeric:tabular-nums;line-height:1.5}
-.calcell .n small{color:var(--mut);font-weight:400}
+.calgrid .dow{color:#c3ccd6;font-size:.8rem;font-weight:600;text-align:center;padding:6px 0}
+.calcell{background:var(--card);border:1px solid var(--line);border-radius:8px;min-height:66px;padding:6px 4px;text-align:center}
+.calcell .d{color:#c3ccd6;font-size:.82rem;margin-bottom:2px}
+.calcell .n{font-weight:700;color:#fff;font-size:1.02rem;line-height:1.65;font-variant-numeric:tabular-nums}
+.calcell .n .sess{color:var(--gold);font-weight:600;font-size:.78rem;margin-right:3px}
 .calcell.today{border-color:var(--gold)}
 .calcell.empty{background:transparent;border:none}
 /* digit analysis */

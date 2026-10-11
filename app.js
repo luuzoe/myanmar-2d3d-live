@@ -88,7 +88,7 @@ function renderCalendar() {
     cell.className = 'calcell' + ((calY === nowP.y && calM === nowP.m && d === nowP.d) ? ' today' : '');
     const m = h && h.morning && h.morning.number ? h.morning.number : '–';
     const e = h && h.evening && h.evening.number ? h.evening.number : '–';
-    cell.innerHTML = `<div class="d">${d}</div><div class="n"><small>မ</small>${m} <small>ည</small>${e}</div>`;
+    cell.innerHTML = `<div class="d">${d}</div><div class="n"><span class="sess">မ</span>${m}<br><span class="sess">ည</span>${e}</div>`;
     grid.appendChild(cell);
   }
   $('cal-prev').disabled = (calY === minY && calM === minM);
