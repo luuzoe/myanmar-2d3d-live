@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://luuzoe.github.io/myanmar-2d3d-live/sitemap.xml
