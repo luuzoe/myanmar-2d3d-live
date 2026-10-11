@@ -92,3 +92,5 @@ details{background:var(--card);border:1px solid var(--line);border-radius:10px;p
 summary{cursor:pointer;font-weight:700;color:var(--gold)}
 details p{margin-top:8px;color:#c9d4e0}
 details b{color:var(--gold)}
+
+.ad-slot { max-width: 728px; margin: 20px auto; text-align: center; min-height: 90px; }
