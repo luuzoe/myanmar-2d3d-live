@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-10-14T23:56:32.469630+06:30",
+ "updated_at": "2026-10-15T00:01:32.360723+06:30",
  "market": {
   "open": false,
   "set_now": 1575.88,
@@ -11,19 +11,9 @@
   "label": "မနက်ပိုင်း 12:01"
  },
  "today": {
-  "date": "2026-10-14",
-  "morning": {
-   "set": 1570.2,
-   "number": "02",
-   "time": "12:00",
-   "status": "final"
-  },
-  "evening": {
-   "set": 1575.88,
-   "number": "58",
-   "time": "16:00",
-   "status": "final"
-  }
+  "date": "2026-10-15",
+  "morning": null,
+  "evening": null
  },
  "history": [
   {
