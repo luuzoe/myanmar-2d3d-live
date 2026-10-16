@@ -1,1 +1,20 @@
-{"draws":[{"date":"2026-10-01","first_prize":"402701","last_two":"70","source":"thairath.co.th","three_d":"701"}],"next_draw":"2026-10-16","updated_at":"2026-10-11T14:30:00+06:30"}
+{
+  "draws": [
+    {
+      "date": "2026-10-16",
+      "first_prize": "011781",
+      "three_d": "781",
+      "last_two": "48",
+      "source": "thairath.co.th"
+    },
+    {
+      "date": "2026-10-01",
+      "first_prize": "402701",
+      "last_two": "70",
+      "source": "thairath.co.th",
+      "three_d": "701"
+    }
+  ],
+  "next_draw": "2026-11-01",
+  "updated_at": "2026-10-16T18:00:18+06:30"
+}
