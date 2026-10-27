@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-10-27T10:41:33.005455+06:30",
+ "updated_at": "2026-10-27T10:46:35.981611+06:30",
  "market": {
   "open": true,
-  "set_now": 1577.14,
-  "set_time": "2026-10-27T10:26:27+06:30"
+  "set_now": 1576.6,
+  "set_time": "2026-10-27T10:31:27+06:30"
  },
  "next_draw": {
   "session": "morning",
@@ -13,15 +13,15 @@
  "today": {
   "date": "2026-10-27",
   "morning": {
-   "set": 1577.14,
-   "number": "71",
-   "time": "10:26",
+   "set": 1576.6,
+   "number": "66",
+   "time": "10:31",
    "status": "live"
   },
   "evening": {
-   "set": 1577.14,
-   "number": "71",
-   "time": "10:26",
+   "set": 1576.6,
+   "number": "66",
+   "time": "10:31",
    "status": "live"
   }
  },
@@ -29,15 +29,15 @@
   {
    "date": "2026-10-27",
    "morning": {
-    "set": 1577.14,
-    "number": "71",
-    "time": "10:26",
+    "set": 1576.6,
+    "number": "66",
+    "time": "10:31",
     "status": "live"
    },
    "evening": {
-    "set": 1577.14,
-    "number": "71",
-    "time": "10:26",
+    "set": 1576.6,
+    "number": "66",
+    "time": "10:31",
     "status": "live"
    }
   },
