@@ -1,27 +1,27 @@
 {
- "updated_at": "2026-10-28T11:56:39.126223+06:30",
+ "updated_at": "2026-10-28T12:01:38.759086+06:30",
  "market": {
   "open": true,
-  "set_now": 1569.48,
-  "set_time": "2026-10-28T11:41:38+06:30"
+  "set_now": 1569.84,
+  "set_time": "2026-10-28T11:46:24+06:30"
  },
  "next_draw": {
-  "session": "morning",
-  "at": "2026-10-28T12:01:00+06:30",
-  "label": "မနက်ပိုင်း 12:01"
+  "session": "evening",
+  "at": "2026-10-28T16:30:00+06:30",
+  "label": "ညနေပိုင်း 16:30"
  },
  "today": {
   "date": "2026-10-28",
   "morning": {
-   "set": 1569.48,
-   "number": "94",
-   "time": "11:41",
+   "set": 1569.84,
+   "number": "98",
+   "time": "11:46",
    "status": "live"
   },
   "evening": {
-   "set": 1569.48,
-   "number": "94",
-   "time": "11:41",
+   "set": 1569.84,
+   "number": "98",
+   "time": "11:46",
    "status": "live"
   }
  },
@@ -29,15 +29,15 @@
   {
    "date": "2026-10-28",
    "morning": {
-    "set": 1569.48,
-    "number": "94",
-    "time": "11:41",
+    "set": 1569.84,
+    "number": "98",
+    "time": "11:46",
     "status": "live"
    },
    "evening": {
-    "set": 1569.48,
-    "number": "94",
-    "time": "11:41",
+    "set": 1569.84,
+    "number": "98",
+    "time": "11:46",
     "status": "live"
    }
   },
