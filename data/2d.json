@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-04T16:41:34.205117+06:30",
+ "updated_at": "2026-11-04T16:46:36.937576+06:30",
  "market": {
   "open": false,
   "set_now": 1502.09,
@@ -22,7 +22,7 @@
    "set": 1502.09,
    "number": "20",
    "time": "16:00",
-   "status": "live"
+   "status": "final"
   }
  },
  "history": [
@@ -38,7 +38,7 @@
     "set": 1502.09,
     "number": "20",
     "time": "16:00",
-    "status": "live"
+    "status": "final"
    }
   },
   {
