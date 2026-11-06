@@ -1,5 +1,5 @@
 {
- "updated_at": "2026-11-06T16:41:34.436212+06:30",
+ "updated_at": "2026-11-06T16:46:35.748121+06:30",
  "market": {
   "open": false,
   "set_now": 1465.7,
@@ -22,7 +22,7 @@
    "set": 1465.7,
    "number": "57",
    "time": "16:00",
-   "status": "live"
+   "status": "final"
   }
  },
  "history": [
@@ -38,7 +38,7 @@
     "set": 1465.7,
     "number": "57",
     "time": "16:00",
-    "status": "live"
+    "status": "final"
    }
   },
   {
