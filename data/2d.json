@@ -1,9 +1,9 @@
 {
- "updated_at": "2026-11-25T14:51:37.899487+06:30",
+ "updated_at": "2026-11-25T14:56:37.457399+06:30",
  "market": {
   "open": true,
-  "set_now": 1432.14,
-  "set_time": "2026-11-25T14:36:38+06:30"
+  "set_now": 1431.16,
+  "set_time": "2026-11-25T14:41:23+06:30"
  },
  "next_draw": {
   "session": "evening",
@@ -19,9 +19,9 @@
    "status": "final"
   },
   "evening": {
-   "set": 1432.14,
-   "number": "21",
-   "time": "14:36",
+   "set": 1431.16,
+   "number": "11",
+   "time": "14:41",
    "status": "live"
   }
  },
@@ -35,9 +35,9 @@
     "status": "final"
    },
    "evening": {
-    "set": 1432.14,
-    "number": "21",
-    "time": "14:36",
+    "set": 1431.16,
+    "number": "11",
+    "time": "14:41",
     "status": "live"
    }
   },
